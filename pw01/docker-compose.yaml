@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  couchbase-server:
+    image: thrudhvangr/couchbase:extra-samples
+    volumes:
+      - ./data:/data
+    ports:
+      - "8091:8091"
+      - "8092:8092"
+      - "8093:8093"
+      - "8094:8094"
+      - "8095:8095"
+      - "8096:8096"
+      - "11210:11210"
+      - "11211:11211"
+
