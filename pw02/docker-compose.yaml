@@ -1,0 +1,27 @@
+version: '3'
+services:
+  loaddb:
+    image: neo4j:5.17.0
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - "neo4j-data:/data"
+      - "./source:/source"
+    command: sh -c "cat /source/contact-tracing-50.dump | neo4j-admin database load neo4j --from-stdin --overwrite-destination"
+
+  graphdb:
+    image: neo4j:5.17.0
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - "neo4j-data:/data"
+      - ./plugins:/plugins
+    ports:
+      - 7474:7474
+      - 7687:7687
+    #user: "${UID_GID}"
+    depends_on:
+      loaddb:
+        condition: service_completed_successfully
+volumes:
+  neo4j-data:
