@@ -24,8 +24,9 @@ public class Requests {
 
     public List<Record> possibleSpreaders() {
         var query = """
-                MATCH (sick:Person {healthstatus:'Sick'})-[sickVisit:VISITS]->(:Place)<-[healthyVisit:VISITS]-(:Person {healthstatus:'Healthy'})
+                MATCH (sick:Person {healthstatus:'Sick'})-[sickVisit:VISITS]->(:Place)<-[healthyVisit:VISITS]-(healthy:Person {healthstatus:'Healthy'})
                 WHERE sickVisit.starttime > sick.confirmedtime
+                  AND healthyVisit.starttime > healthy.confirmedtime
                   AND healthyVisit.starttime > sickVisit.starttime
                 RETURN DISTINCT sick.name AS sickName
                 """;
@@ -40,7 +41,8 @@ public class Requests {
         var query = """
                 MATCH (sick:Person {healthstatus:'Sick'})-[sickVisit:VISITS]->(:Place)<-[healthyVisit:VISITS]-(healthy:Person {healthstatus:'Healthy'})
                 WHERE sickVisit.starttime > sick.confirmedtime
-                    AND healthyVisit.starttime > sickVisit.starttime
+                  AND healthyVisit.starttime > healthy.confirmedtime
+                  AND healthyVisit.starttime > sickVisit.starttime
                 RETURN sick.name AS sickName,
                        COUNT(healthy) AS nbHealthy
                 """;
@@ -86,6 +88,8 @@ public class Requests {
     public List<Record> peopleToInform() {
         var query = """
                 MATCH (sick:Person {healthstatus:'Sick'})-[sickVisit:VISITS]->(:Place)<-[healthyVisit:VISITS]-(healthy:Person {healthstatus:'Healthy'})
+                WHERE sickVisit.starttime > sick.confirmedtime
+                  AND healthyVisit.starttime > healthy.confirmedtime
                 WITH sick, healthy,
                      duration.inSeconds(
                          apoc.coll.max([sickVisit.starttime, healthyVisit.starttime]),
@@ -105,6 +109,8 @@ public class Requests {
     public List<Record> setHighRisk() {
         var query = """
                 MATCH (sick:Person {healthstatus:'Sick'})-[sickVisit:VISITS]->(:Place)<-[healthyVisit:VISITS]-(healthy:Person {healthstatus:'Healthy'})
+                WHERE sickVisit.starttime > sick.confirmedtime
+                  AND healthyVisit.starttime > healthy.confirmedtime
                 WITH sick, healthy,
                      duration.inSeconds(
                          apoc.coll.max([sickVisit.starttime, healthyVisit.starttime]),
