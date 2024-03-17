@@ -130,7 +130,7 @@ public class Requests {
 
     public List<Record> healthyCompanionsOf(String name) {
         var query = """
-                MATCH (p:Person {name: $name})-[v:VISITS*..3]-(c:Person {healthstatus:'Healthy'})
+                MATCH (p:Person {name: $name})-[v:VISITS*6]-(c:Person {healthstatus:'Healthy'})
                 WHERE c <> p
                 RETURN DISTINCT c.name AS healthyName
                 """;
