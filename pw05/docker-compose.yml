@@ -1,0 +1,17 @@
+version: "3"
+services:
+  zeppelin:
+    image: thrudhvangr/bda-zeppelin:0.11.0
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      ZEPPELIN_LOG_DIR: /logs
+      ZEPPELIN_NOTEBOOK_DIR: /notebooks
+    volumes:
+      - "./logs:/logs"
+      - "./notebooks:/notebooks"
+      - "./data:/data"
+
