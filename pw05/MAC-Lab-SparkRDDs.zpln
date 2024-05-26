@@ -1,1091 +1,1050 @@
 ﻿{
-  "paragraphs": [
-    {
-      "text": "%md\n# Méthode d'accès aux données\n## Labo: Spark\n\nAuteur: Christopher MEIER\n\nPrintemps 2024",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:08+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "tableHide": false,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h1>Méthode d&rsquo;accès aux données</h1>\n<h2>Labo: Spark</h2>\n<p>Auteur: Christopher MEIER</p>\n<p>Printemps 2024</p>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636794_1673279889",
-      "id": "20240513-092648_2102106332",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:183",
-      "dateFinished": "2024-05-21T13:39:08+0000",
-      "dateStarted": "2024-05-21T13:39:08+0000"
+ "paragraphs": [
+  {
+   "text": "%md\n# Méthode d'accès aux données\n## Labo: Spark\n\nAuteurs: Loïc Herman et Jonas Troeltsch\n\nPrintemps 2024",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.168",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
     },
-    {
-      "text": "%md\n### Spark initialisation\n\nNothing to modify in this section.\n\nHere we create and configure the SparkSession and SparkContext.",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:08+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "tableHide": false,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Spark initialisation</h3>\n<p>Nothing to modify in this section.</p>\n<p>Here we create and configure the SparkSession and SparkContext.</p>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_2128456846",
-      "id": "20240513-092648_713056072",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:184",
-      "dateFinished": "2024-05-21T13:39:08+0000",
-      "dateStarted": "2024-05-21T13:39:08+0000"
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636794_1673279889",
+   "id": "20240513-092648_2102106332",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:183",
+   "dateFinished": "2024-05-26 10:38:47.168",
+   "dateStarted": "2024-05-26 10:38:46.515",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Méthode d&rsquo;accès aux données</h1>\n<h2>Labo: Spark</h2>\n<p>Auteurs: Loïc Herman et Jonas Troeltsch</p>\n<p>Printemps 2024</p>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\n### Spark initialisation\n\nNothing to modify in this section.\n\nHere we create and configure the SparkSession and SparkContext.",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.242",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
     },
-    {
-      "text": "%spark\n// The spark session is automatically created by Zeppelin.\n// We import some often used functions\nimport org.apache.spark.sql._\nimport org.apache.spark.rdd._",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:29+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "tableHide": false,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "import org.apache.spark.sql._\nimport org.apache.spark.rdd._\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_1866006726",
-      "id": "20240513-092648_753540709",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:185",
-      "dateFinished": "2024-05-21T13:39:29+0000",
-      "dateStarted": "2024-05-21T13:39:29+0000"
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_2128456846",
+   "id": "20240513-092648_713056072",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:184",
+   "dateFinished": "2024-05-26 10:38:47.242",
+   "dateStarted": "2024-05-26 10:38:47.173",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h3>Spark initialisation</h3>\n<p>Nothing to modify in this section.</p>\n<p>Here we create and configure the SparkSession and SparkContext.</p>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\n// The spark session is automatically created by Zeppelin.\n// We import some often used functions\nimport org.apache.spark.sql._\nimport org.apache.spark.rdd._",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.331",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "tableHide": false,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
     },
-    {
-      "text": "%md\n### Dataset loading\n\nNothing to modify in this section.",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:29+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Dataset loading</h3>\n<p>Nothing to modify in this section.</p>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_518299043",
-      "id": "20240513-092648_1088362509",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:186",
-      "dateFinished": "2024-05-21T13:39:29+0000",
-      "dateStarted": "2024-05-21T13:39:29+0000"
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_1866006726",
+   "id": "20240513-092648_753540709",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:185",
+   "dateFinished": "2024-05-26 10:38:47.331",
+   "dateStarted": "2024-05-26 10:38:47.245",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "import org.apache.spark.sql._\nimport org.apache.spark.rdd._\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\n### Dataset loading\n\nNothing to modify in this section.",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.370",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
     },
-    {
-      "text": "%spark\ncase class Movie(id: Int, title: String, genres: Seq[String],\n                 description: String, director: String, actors: Seq[String],\n                 year: Int, rating: Float, votes: Int)",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:29+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "class Movie\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_2125559482",
-      "id": "20240513-092648_1619176723",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:187",
-      "dateFinished": "2024-05-21T13:39:29+0000",
-      "dateStarted": "2024-05-21T13:39:29+0000"
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_518299043",
+   "id": "20240513-092648_1088362509",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:186",
+   "dateFinished": "2024-05-26 10:38:47.370",
+   "dateStarted": "2024-05-26 10:38:47.339",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h3>Dataset loading</h3>\n<p>Nothing to modify in this section.</p>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\ncase class Movie(id: Int, title: String, genres: Seq[String],\n                 description: String, director: String, actors: Seq[String],\n                 year: Int, rating: Float, votes: Int)",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.460",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
     },
-    {
-      "text": "%spark\ndef parseRow(row: Row): Movie = {\n    val id = row.getInt(0)\n    val title = row.getString(1)\n    val genres = row.getString(2).split(\",\").toList\n    val description = row.getString(3)\n    val director = row.getString(4)\n    val actors = row.getString(5).split(\",\").toList\n    val year = row.getInt(6)\n    val rating = row.getDouble(8).toFloat\n    val votes = row.getInt(9)\n\n    Movie(id, title, genres, description, director, actors, year, rating, votes)\n}",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:29+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "def parseRow(row: org.apache.spark.sql.Row): \u001b[1m\u001b[32mMovie\u001b[0m\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_1365713731",
-      "id": "20240513-092648_876154503",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:188",
-      "dateFinished": "2024-05-21T13:39:29+0000",
-      "dateStarted": "2024-05-21T13:39:29+0000"
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_2125559482",
+   "id": "20240513-092648_1619176723",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:187",
+   "dateFinished": "2024-05-26 10:38:47.460",
+   "dateStarted": "2024-05-26 10:38:47.373",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "class Movie\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\ndef parseRow(row: Row): Movie = {\n    val id = row.getInt(0)\n    val title = row.getString(1)\n    val genres = row.getString(2).split(\",\").toList\n    val description = row.getString(3)\n    val director = row.getString(4)\n    val actors = row.getString(5).split(\",\").toList\n    val year = row.getInt(6)\n    val rating = row.getDouble(8).toFloat\n    val votes = row.getInt(9)\n\n    Movie(id, title, genres, description, director, actors, year, rating, votes)\n}",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.527",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
     },
-    {
-      "text": "%spark\nval filename = \"/data/IMDB-Movie-Data.csv\"\nval moviesDF = spark.read.format(\"csv\")\n    .option(\"sep\", \",\")\n    .option(\"inferSchema\", \"true\")\n    .option(\"header\", \"true\")\n    .load(filename)\nval rddMovies = moviesDF.rdd.map(parseRow)",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:29+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "val \u001b[1m\u001b[34mfilename\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = /data/IMDB-Movie-Data.csv\nval \u001b[1m\u001b[34mmoviesDF\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Rank: int, Title: string ... 10 more fields]\nval \u001b[1m\u001b[34mrddMovies\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Movie]\u001b[0m = MapPartitionsRDD[297] at map at <console>:8\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://babf1896483b:4040/jobs/job?id=64",
-              "$$hashKey": "object:3246"
-            },
-            {
-              "jobUrl": "http://babf1896483b:4040/jobs/job?id=65",
-              "$$hashKey": "object:3247"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_298908603",
-      "id": "20240513-092648_218362564",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:189",
-      "dateFinished": "2024-05-21T13:39:30+0000",
-      "dateStarted": "2024-05-21T13:39:29+0000"
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_1365713731",
+   "id": "20240513-092648_876154503",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:188",
+   "dateFinished": "2024-05-26 10:38:47.527",
+   "dateStarted": "2024-05-26 10:38:47.466",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "def parseRow(row: org.apache.spark.sql.Row): \u001b[1m\u001b[32mMovie\u001b[0m\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\nval filename = \"/data/IMDB-Movie-Data.csv\"\nval moviesDF = spark.read.format(\"csv\")\n    .option(\"sep\", \",\")\n    .option(\"inferSchema\", \"true\")\n    .option(\"header\", \"true\")\n    .load(filename)\nval rddMovies = moviesDF.rdd.map(parseRow)",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.754",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
     },
-    {
-      "text": "%spark\n// Print the title of the first 10 movies to see if they were correctly added.\nrddMovies.take(10).map(m => m.title).foreach(println)",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:30+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://babf1896483b:4040/jobs/job?id=64",
+       "$$hashKey": "object:3246"
       },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "Guardians of the Galaxy\nPrometheus\nSplit\nSing\nSuicide Squad\nThe Great Wall\nLa La Land\nMindhorn\nThe Lost City of Z\nPassengers\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://babf1896483b:4040/jobs/job?id=66",
-              "$$hashKey": "object:3285"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_710684605",
-      "id": "20240513-092648_2138868674",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:190",
-      "dateFinished": "2024-05-21T13:39:31+0000",
-      "dateStarted": "2024-05-21T13:39:30+0000"
-    },
-    {
-      "text": "%md\n### Part 1 - Playing with the movies using RDD functions\n\nThe goal of this part is to play (i.e. query, filter and transform the data) with the movies.",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:31+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Part 1 - Playing with the movies using RDD functions</h3>\n<p>The goal of this part is to play (i.e. query, filter and transform the data) with the movies.</p>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636795_549982046",
-      "id": "20240513-092648_182672139",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:191",
-      "dateFinished": "2024-05-21T13:39:31+0000",
-      "dateStarted": "2024-05-21T13:39:31+0000"
-    },
-    {
-      "text": "%md\n#### Ex1 - Print the movies whose title contains \"City\" \n\nGoal: \n\n* use `map()` and `filter()` methods to get the title of the movies that contains \"City\" in their title\n \nOutput example:\n\n```plain\nCity of Tiny Lights\nThe Mortal Instruments: City of Bones\n```\n\nSteps:\n\n* Use `filter()` to only keep the movies that contains \"City\" in their title\n* Use `map()` to retrieve the titles of these filtered movies\n* Use `foreach()` to pretty print the results",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:31+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h4>Ex1 - Print the movies whose title contains &ldquo;City&rdquo;</h4>\n<p>Goal:</p>\n<ul>\n<li>use <code>map()</code> and <code>filter()</code> methods to get the title of the movies that contains &ldquo;City&rdquo; in their title</li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">City of Tiny Lights\nThe Mortal Instruments: City of Bones\n</code></pre>\n<p>Steps:</p>\n<ul>\n<li>Use <code>filter()</code> to only keep the movies that contains &ldquo;City&rdquo; in their title</li>\n<li>Use <code>map()</code> to retrieve the titles of these filtered movies</li>\n<li>Use <code>foreach()</code> to pretty print the results</li>\n</ul>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636796_1691792551",
-      "id": "20240513-092648_143829024",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:192",
-      "dateFinished": "2024-05-21T13:39:31+0000",
-      "dateStarted": "2024-05-21T13:39:31+0000"
-    },
-    {
-      "text": "%spark\n// TODO students",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:31+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "ERROR",
-        "msg": []
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636796_543931431",
-      "id": "20240513-092648_1913578715",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "ERROR",
-      "$$hashKey": "object:193",
-      "dateFinished": "2024-05-21T13:39:31+0000",
-      "dateStarted": "2024-05-21T13:39:31+0000"
-    },
-    {
-      "text": "%md\n#### Ex2 - Print the title of the movies rated between `rateMin` and `rateMax`. Take the 10 best ratings.\n\nGoal:\n    \n* Take the titles of the movies that were rated between `rateMin` and `rateMax` (excluding `rateMin` and including`rateMax`).\n* This list is sorted by rating DESC\n    \nOutput example:\n\n```plain\n...\n3.7 - The Last Face\n3.5 - Wrecker\n...\n```\n    \nSteps:\n\n* Use `filter()` to only keep the movies released between `rateMin` and `rateMax`\n* Sort the filtered movies by decreasing rating\n* Use `map()` to keep only the relevant attributes (i.e. rating and title)\n* Use `foreach()` to pretty print the results",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:37:49+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h4>Ex2 - Print the title of the movies rated between <code>rateMin</code> and <code>rateMax</code>. Take the 10 best ratings.</h4>\n<p>Goal:</p>\n<ul>\n<li>Take the titles of the movies that were rated between <code>rateMin</code> and <code>rateMax</code> (excluding <code>rateMin</code> and including<code>rateMax</code>).</li>\n<li>This list is sorted by rating DESC</li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">...\n3.7 - The Last Face\n3.5 - Wrecker\n...\n</code></pre>\n<p>Steps:</p>\n<ul>\n<li>Use <code>filter()</code> to only keep the movies released between <code>rateMin</code> and <code>rateMax</code></li>\n<li>Sort the filtered movies by decreasing rating</li>\n<li>Use <code>map()</code> to keep only the relevant attributes (i.e. rating and title)</li>\n<li>Use <code>foreach()</code> to pretty print the results</li>\n</ul>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636796_1382081563",
-      "id": "20240513-092648_847272060",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:194",
-      "dateFinished": "2024-05-21T13:37:49+0000",
-      "dateStarted": "2024-05-21T13:37:49+0000"
-    },
-    {
-      "text": "%spark\nval rateMin = 3\nval rateMax = 4\n// TODO student",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:42+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "val \u001b[1m\u001b[34mrateMin\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 3\nval \u001b[1m\u001b[34mrateMax\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 4\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636796_1345416127",
-      "id": "20240513-092648_415273231",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:195",
-      "dateFinished": "2024-05-21T13:39:42+0000",
-      "dateStarted": "2024-05-21T13:39:42+0000"
-    },
-    {
-      "text": "%md\n#### Ex3 - Print the 10 top genres\n\nGoals:\n\n* Print the list of the genres that appears the most\n* Use `flatMap()`\n\nOutput example:\n\n```plain\nDrama (513)\nAction (303)\nComedy (279)\nAdventure (259)\n```\n\nTheory:\n\nWhen an operation is giving you a sequence of sequences like:\n\n```scala\nArray(\"hello\", \"world\").map(word => word.split(\"\"))\nres91: Array[Array[String]] = Array(Array(h, e, l, l, o), Array(w, o, r, l, d))\n```\n\nYou may want to flatten this to only have a single list like:\n```scala\nArray(\"hello\", \"world\").map(_.split(\"\")).flatten\nres93: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n```\n\nYou can achieve the same result (i.e. `map` + `flatten`) using `flatMap`:\n```scala\nArray(\"hello\", \"world\").flatMap(_.split(\"\"))\nres95: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n```\n\nWe are going to apply this same technique with the `genres` member.\n\nSteps:\n\n* Use `flatMap()` to get the list with all the genres\n* Make sure to remove trailling whitespaces\n* Count the genres\n* Sort them by decreasing order\n* Show the top 10 genres",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:37:50+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h4>Ex3 - Print the 10 top genres</h4>\n<p>Goals:</p>\n<ul>\n<li>Print the list of the genres that appears the most</li>\n<li>Use <code>flatMap()</code></li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">Drama (513)\nAction (303)\nComedy (279)\nAdventure (259)\n</code></pre>\n<p>Theory:</p>\n<p>When an operation is giving you a sequence of sequences like:</p>\n<pre><code class=\"language-scala\">Array(&quot;hello&quot;, &quot;world&quot;).map(word =&gt; word.split(&quot;&quot;))\nres91: Array[Array[String]] = Array(Array(h, e, l, l, o), Array(w, o, r, l, d))\n</code></pre>\n<p>You may want to flatten this to only have a single list like:</p>\n<pre><code class=\"language-scala\">Array(&quot;hello&quot;, &quot;world&quot;).map(_.split(&quot;&quot;)).flatten\nres93: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n</code></pre>\n<p>You can achieve the same result (i.e. <code>map</code> + <code>flatten</code>) using <code>flatMap</code>:</p>\n<pre><code class=\"language-scala\">Array(&quot;hello&quot;, &quot;world&quot;).flatMap(_.split(&quot;&quot;))\nres95: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n</code></pre>\n<p>We are going to apply this same technique with the <code>genres</code> member.</p>\n<p>Steps:</p>\n<ul>\n<li>Use <code>flatMap()</code> to get the list with all the genres</li>\n<li>Make sure to remove trailling whitespaces</li>\n<li>Count the genres</li>\n<li>Sort them by decreasing order</li>\n<li>Show the top 10 genres</li>\n</ul>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636796_1134721265",
-      "id": "20240513-092648_1323552940",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:196",
-      "dateFinished": "2024-05-21T13:37:50+0000",
-      "dateStarted": "2024-05-21T13:37:50+0000"
-    },
-    {
-      "text": "%spark\n// TODO student",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:46+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "ERROR",
-        "msg": []
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636796_757579013",
-      "id": "20240513-092648_877853710",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "ERROR",
-      "$$hashKey": "object:197",
-      "dateFinished": "2024-05-21T13:39:46+0000",
-      "dateStarted": "2024-05-21T13:39:46+0000"
-    },
-    {
-      "text": "%md\n#### Ex4 - Print the average number of votes per year, order by descreasing number of votes\n\nGoal:\n\n* Print the average votes per year\n* This output is sorted by descreasing votes\n\nOutput example:\n\n```plain\n...\nyear: 2008 average votes: 275505.3846153846\nyear: 2009 average votes: 255780.64705882352\nyear: 2010 average votes: 252782.31666666668\n...\n```\n\nTheory:\n\nWe are going to use `reduceByKey()` which has the following signature `reduceByKey(func: (V, V) => V): RDD[(K, V)]`. \n\n`reduceByKey()` works on a RDD like `RDD[(K,V)]` (i.e. sort of \"list of key/values pairs\"). \n\n`reduceByKey()` takes a function that, from two elements, returns one i.e. the `func: (V, V) => V` in the signature.\nThe difference with `reduce()` is that `reduceByKey()` uses two elements sharing the same key.\n\nFor example (pseudo code):\n\n```plain\n year, count\n(2010, 2)\n(2011, 3)\n(2011, 4)\n(2010, 8)\n// use reduceByKey((count1, count2) => count1+count2)\n> (2010, 10)\n> (2011, 7)\n```\n\nNote: here `count` is just an Int but it can be anything e.g. `Movie`\n\nSteps:\n\n* To compute the average we need the **total sum** of votes per year and the **count** of all the movies per year\n* Use `map()` to create an RDD made of `(year, (votes, 1))`. Like a word count we use the `1` to be able to count the number of movies per year\n* Use `reduceByKey()` to sum the votes and to count the number of movies per year. The output should look like: `(year, (totalVotes, moviePerYearCount))`\n* Find a way to compute the average using the result from the last operation\n* Sort by number of votes decreasing",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:37:50+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h4>Ex4 - Print the average number of votes per year, order by descreasing number of votes</h4>\n<p>Goal:</p>\n<ul>\n<li>Print the average votes per year</li>\n<li>This output is sorted by descreasing votes</li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">...\nyear: 2008 average votes: 275505.3846153846\nyear: 2009 average votes: 255780.64705882352\nyear: 2010 average votes: 252782.31666666668\n...\n</code></pre>\n<p>Theory:</p>\n<p>We are going to use <code>reduceByKey()</code> which has the following signature <code>reduceByKey(func: (V, V) =&gt; V): RDD[(K, V)]</code>.</p>\n<p><code>reduceByKey()</code> works on a RDD like <code>RDD[(K,V)]</code> (i.e. sort of &ldquo;list of key/values pairs&rdquo;).</p>\n<p><code>reduceByKey()</code> takes a function that, from two elements, returns one i.e. the <code>func: (V, V) =&gt; V</code> in the signature.<br />\nThe difference with <code>reduce()</code> is that <code>reduceByKey()</code> uses two elements sharing the same key.</p>\n<p>For example (pseudo code):</p>\n<pre><code class=\"language-plain\"> year, count\n(2010, 2)\n(2011, 3)\n(2011, 4)\n(2010, 8)\n// use reduceByKey((count1, count2) =&gt; count1+count2)\n&gt; (2010, 10)\n&gt; (2011, 7)\n</code></pre>\n<p>Note: here <code>count</code> is just an Int but it can be anything e.g. <code>Movie</code></p>\n<p>Steps:</p>\n<ul>\n<li>To compute the average we need the <strong>total sum</strong> of votes per year and the <strong>count</strong> of all the movies per year</li>\n<li>Use <code>map()</code> to create an RDD made of <code>(year, (votes, 1))</code>. Like a word count we use the <code>1</code> to be able to count the number of movies per year</li>\n<li>Use <code>reduceByKey()</code> to sum the votes and to count the number of movies per year. The output should look like: <code>(year, (totalVotes, moviePerYearCount))</code></li>\n<li>Find a way to compute the average using the result from the last operation</li>\n<li>Sort by number of votes decreasing</li>\n</ul>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636796_44944771",
-      "id": "20240513-092648_1078439886",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:198",
-      "dateFinished": "2024-05-21T13:37:50+0000",
-      "dateStarted": "2024-05-21T13:37:50+0000"
-    },
-    {
-      "text": "%spark\n// TODO student",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:39:49+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "ERROR",
-        "msg": []
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636797_868442753",
-      "id": "20240513-092648_1308721736",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "ERROR",
-      "$$hashKey": "object:199",
-      "dateFinished": "2024-05-21T13:39:49+0000",
-      "dateStarted": "2024-05-21T13:39:49+0000"
-    },
-    {
-      "text": "%md\n### Part 2 - Create a basic Inverted Index\n\nThe goal of this part is to show you how to create an inverted index that indexes words from all the movies' description.",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:37:50+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<h3>Part 2 - Create a basic Inverted Index</h3>\n<p>The goal of this part is to show you how to create an inverted index that indexes words from all the movies&rsquo; description.</p>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636797_1538044009",
-      "id": "20240513-092648_362503434",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:200",
-      "dateFinished": "2024-05-21T13:37:50+0000",
-      "dateStarted": "2024-05-21T13:37:50+0000"
-    },
-    {
-      "text": "%md\nGoal:\n\nUsing `rddMovies` create an inverted that use the movies' description:\n\n```plain\nMovie(1,Guardians of the Galaxy,List(Action, Adventure, Sci-Fi),A group of intergalactic [...] of the universe.,James Gunn,List(Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana),2014,8.1,757074.0)\nMovie(2,Prometheus,List(Adventure, Mystery, Sci-Fi),Following clues to the origin[...] not alone.,Ridley Scott,List(Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron),2012,7.0,485820.0)\nMovie(3,Split,List(Horror, Thriller),Three girls are kidnapped [...] a frightful new 24th.,M. Night Shyamalan,List(James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula),2016,7.3,157606.0)\n...\n```\n\nand extract them to produce an inverted index like:\n\n```plain\n\"reunion\" -> (640, 697)\n\"runner\" -> (338)\n\"vietnam\" -> (797, 947, 983)\n...\n```\n\nSteps\n\n* Tokenize description i.e. produce an RDD like (movId, words)\n* Normalize words e.g. toLowercase, trimming,..\n* Remove stopwords (ignored here)\n* Apply stemming (ignored here)\n* Group by document id",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:37:50+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<p>Goal:</p>\n<p>Using <code>rddMovies</code> create an inverted that use the movies&rsquo; description:</p>\n<pre><code class=\"language-plain\">Movie(1,Guardians of the Galaxy,List(Action, Adventure, Sci-Fi),A group of intergalactic [...] of the universe.,James Gunn,List(Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana),2014,8.1,757074.0)\nMovie(2,Prometheus,List(Adventure, Mystery, Sci-Fi),Following clues to the origin[...] not alone.,Ridley Scott,List(Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron),2012,7.0,485820.0)\nMovie(3,Split,List(Horror, Thriller),Three girls are kidnapped [...] a frightful new 24th.,M. Night Shyamalan,List(James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula),2016,7.3,157606.0)\n...\n</code></pre>\n<p>and extract them to produce an inverted index like:</p>\n<pre><code class=\"language-plain\">&quot;reunion&quot; -&gt; (640, 697)\n&quot;runner&quot; -&gt; (338)\n&quot;vietnam&quot; -&gt; (797, 947, 983)\n...\n</code></pre>\n<p>Steps</p>\n<ul>\n<li>Tokenize description i.e. produce an RDD like (movId, words)</li>\n<li>Normalize words e.g. toLowercase, trimming,..</li>\n<li>Remove stopwords (ignored here)</li>\n<li>Apply stemming (ignored here)</li>\n<li>Group by document id</li>\n</ul>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636797_1720307860",
-      "id": "20240513-092648_1212054958",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:201",
-      "dateFinished": "2024-05-21T13:37:50+0000",
-      "dateStarted": "2024-05-21T13:37:50+0000"
-    },
-    {
-      "text": "%spark\n/**\n* Goal: create an inverted index that allows searching a word\n* in the movies description.\n* Features:\n* - case insensitive\n*\n*/\n// TODO student\n// In this first function we are going to tokenize and order the descriptions of the movies, then return these data. We are not going to apply any search right now.\ndef createInvertedIndex(movies: RDD[Movie]): RDD[(String, Iterable[Int])] = {\n    // Define helper functions directly inside this function. In scala you can declare inner functions\n    // and use them only inside the function they were declared. Useful to encapsulate/restrict \n    // their use outside this function.\n    \n    // Split the given string into an array of words (without any formatting), then return it.\n    def tokenizeDescription(description: String): Seq[String] = {\n        // TODO student\n        ???\n    }\n    \n    // Remove the blank spaces (trim) in the given word, transform it in lowercase, then return it.\n    def normalizeWord(word: String): String = {\n        // TODO student\n        ???\n    }\n    \n    // For the sake of simplicity let's ignore the implementation (in a real case we would return true if w is a stopword, otherwise false).\n    // TODO student nothing here but still call this function in your invertedIndex creation process.\n    def isStopWord(w: String): Boolean = {\n        false\n    }\n    \n    // For the sake of simplicity let's ignore the implementation (in a real case we would apply stemming to w and return the result, e.g. w=automation -> w=automat).\n    // TODO student nothing here but still call this function in your invertedIndex creation process.\n    def applyStemming(w: String): String = {\n        w\n    }\n    \n    // TODO student\n    // Here we are going to work on the movies RDD, by tokenizing and normalizing the description of every movie, then by building a key-value object that contains the tokens as keys, and the IDs of the movies as values\n    // (see the example on 4).\n    // The goal here is to do everything by chaining the possible transformations and actions of Spark.\n    // Possible steps:\n    //   1) What we first want to do here is applying the 4 previous methods on any movie's description. Be aware of the fact that we also want to keep the IDs of the movies.\n    //   2) For each tokenized word, create a tuple as (word, id), where id is the current movie id\n    //        [\n    //          (\"toto\", 120), (\"mange\", 120), (\"des\", 120), (\"pommes\", 120),\n    //          (\"toto\", 121), (\"lance\", 121), (\"des\", 121), (\"photocopies\", 121)\n    //        ]\n    //      Hint: you can use a `map` function inside another `map` function.\n    //   3) We finally need to find a way to remove duplicated keys and thus only having one entry per key, with all the linked IDs as values. For example:\n    //        [\n    //          (\"toto\", [120, 121]),\n    //          (\"mange\", [120]),\n    //          ...\n    //        ]\n    val invertedIndex = ???\n\n    // Return the new-built inverted index.\n    invertedIndex\n}",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:40:05+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "def createInvertedIndex(movies: org.apache.spark.rdd.RDD[Movie]): \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Iterable[Int])]\u001b[0m\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636797_1891513581",
-      "id": "20240513-092648_1408148244",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:202",
-      "dateFinished": "2024-05-21T13:40:05+0000",
-      "dateStarted": "2024-05-21T13:40:05+0000"
-    },
-    {
-      "text": "%md\nNow we would like to use our inverted index to display the top N most used words in the descriptions of movies.",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:37:51+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "colWidth": 12,
-        "editorHide": true,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "<div class=\"markdown-body\">\n<p>Now we would like to use our inverted index to display the top N most used words in the descriptions of movies.</p>\n\n</div>"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636797_590422242",
-      "id": "20240513-092648_1571732340",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:203",
-      "dateFinished": "2024-05-21T13:37:51+0000",
-      "dateStarted": "2024-05-21T13:37:51+0000"
-    },
-    {
-      "text": "%spark\n// TODO student\n// Here we are going to operate the analytic and display its result on a given inverted index (that will be obtained from the previous function).\ndef topN(invertedIndex: RDD[(String, Iterable[Int])], N: Int): Unit = {\n  // TODO student\n  // We are going to work on the given invertedIndex array to do our analytic:\n  //   1) Find a way to get the number of movie in which a word appears.\n  //   2) Keep only the top N words and their occurence.\n  val topWords: Array[(String, Int)] = ???\n  \n  // Print the words and the number of descriptions in which they appear.\n  println(\"Top '\" + N + \"' most used words\")\n  topWords.foreach(println)\n}",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:40:08+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "def topN(invertedIndex: org.apache.spark.rdd.RDD[(String, Iterable[Int])], N: Int): \u001b[1m\u001b[32mUnit\u001b[0m\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636797_527525931",
-      "id": "20240513-092648_800469110",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "FINISHED",
-      "$$hashKey": "object:204",
-      "dateFinished": "2024-05-21T13:40:09+0000",
-      "dateStarted": "2024-05-21T13:40:08+0000"
-    },
-    {
-      "text": "%spark\n// Code used to test your implementation.\n// Create the inverted index of the movies.\nval invertedIndex = createInvertedIndex(rddMovies)\n\n// Show how the inverted index looks like.\ninvertedIndex.take(3).foreach(x => println(x._1 + \": \" + x._2.mkString(\", \")))\n\n// Show the top 10 most used words.\ntopN(invertedIndex, 10)",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:40:12+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "editorHide": false,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "ERROR",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "scala.NotImplementedError: an implementation is missing\n  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)\n  at createInvertedIndex(<console>:58)\n  ... 38 elided\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636797_1479214559",
-      "id": "20240513-092648_1232697535",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "ERROR",
-      "$$hashKey": "object:205",
-      "dateFinished": "2024-05-21T13:40:12+0000",
-      "dateStarted": "2024-05-21T13:40:12+0000"
-    },
-    {
-      "text": "%spark\n",
-      "user": "anonymous",
-      "dateUpdated": "2024-05-21T13:37:51+0000",
-      "progress": 0,
-      "config": {
-        "lineNumbers": true,
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/scala",
-        "colWidth": 12,
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1716298636798_565451276",
-      "id": "paragraph_1716290266344_470791481",
-      "dateCreated": "2024-05-21T13:37:16+0000",
-      "status": "ERROR",
-      "$$hashKey": "object:206",
-      "dateFinished": "2024-05-21T13:37:51+0000",
-      "dateStarted": "2024-05-21T13:37:51+0000",
-      "results": {
-        "code": "ERROR",
-        "msg": []
+      {
+       "jobUrl": "http://babf1896483b:4040/jobs/job?id=65",
+       "$$hashKey": "object:3247"
       }
+     ],
+     "interpreterSettingId": "spark"
     }
-  ],
-  "name": "MAC-Lab-SparkRDDs",
-  "id": "2K1C1GSSE",
-  "defaultInterpreterGroup": "spark",
-  "version": "0.11.0",
-  "noteParams": {},
-  "noteForms": {},
-  "angularObjects": {},
-  "config": {
-    "personalizedMode": "false",
-    "looknfeel": "default",
-    "isZeppelinNotebookCronEnable": false
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_298908603",
+   "id": "20240513-092648_218362564",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:189",
+   "dateFinished": "2024-05-26 10:38:47.754",
+   "dateStarted": "2024-05-26 10:38:47.532",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "val \u001b[1m\u001b[34mfilename\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = /data/IMDB-Movie-Data.csv\nval \u001b[1m\u001b[34mmoviesDF\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Rank: int, Title: string ... 10 more fields]\nval \u001b[1m\u001b[34mrddMovies\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Movie]\u001b[0m = MapPartitionsRDD[187] at map at <console>:8\n"
+     }
+    ]
+   }
   },
-  "info": {
-    "isRunning": false
+  {
+   "text": "%spark\n// Print the title of the first 10 movies to see if they were correctly added.\nrddMovies.take(10).map(m => m.title).foreach(println)",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.877",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://babf1896483b:4040/jobs/job?id=66",
+       "$$hashKey": "object:3285"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_710684605",
+   "id": "20240513-092648_2138868674",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:190",
+   "dateFinished": "2024-05-26 10:38:47.877",
+   "dateStarted": "2024-05-26 10:38:47.763",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "Guardians of the Galaxy\nPrometheus\nSplit\nSing\nSuicide Squad\nThe Great Wall\nLa La Land\nMindhorn\nThe Lost City of Z\nPassengers\n"
+     }
+    ]
+   }
   },
-  "path": "/MAC-Lab-SparkRDDs"
+  {
+   "text": "%md\n### Part 1 - Playing with the movies using RDD functions\n\nThe goal of this part is to play (i.e. query, filter and transform the data) with the movies.",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:47.923",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636795_549982046",
+   "id": "20240513-092648_182672139",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:191",
+   "dateFinished": "2024-05-26 10:38:47.923",
+   "dateStarted": "2024-05-26 10:38:47.887",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h3>Part 1 - Playing with the movies using RDD functions</h3>\n<p>The goal of this part is to play (i.e. query, filter and transform the data) with the movies.</p>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\n#### Ex1 - Print the movies whose title contains \"City\" \n\nGoal: \n\n* use `map()` and `filter()` methods to get the title of the movies that contains \"City\" in their title\n \nOutput example:\n\n```plain\nCity of Tiny Lights\nThe Mortal Instruments: City of Bones\n```\n\nSteps:\n\n* Use `filter()` to only keep the movies that contains \"City\" in their title\n* Use `map()` to retrieve the titles of these filtered movies\n* Use `foreach()` to pretty print the results",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:48.013",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636796_1691792551",
+   "id": "20240513-092648_143829024",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:192",
+   "dateFinished": "2024-05-26 10:38:48.013",
+   "dateStarted": "2024-05-26 10:38:47.928",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h4>Ex1 - Print the movies whose title contains &ldquo;City&rdquo;</h4>\n<p>Goal:</p>\n<ul>\n<li>use <code>map()</code> and <code>filter()</code> methods to get the title of the movies that contains &ldquo;City&rdquo; in their title</li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">City of Tiny Lights\nThe Mortal Instruments: City of Bones\n</code></pre>\n<p>Steps:</p>\n<ul>\n<li>Use <code>filter()</code> to only keep the movies that contains &ldquo;City&rdquo; in their title</li>\n<li>Use <code>map()</code> to retrieve the titles of these filtered movies</li>\n<li>Use <code>foreach()</code> to pretty print the results</li>\n</ul>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\n// Had to use collect otherwise nothing was being printed.\nrddMovies.filter(_.title contains \"City\").map(_.title).collect().foreach(println)",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:48.132",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {
+     "bdtMeta": {}
+    },
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636796_543931431",
+   "id": "20240513-092648_1913578715",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:193",
+   "dateFinished": "2024-05-26 10:38:48.132",
+   "dateStarted": "2024-05-26 10:38:48.015",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "The Lost City of Z\nSin City: A Dame to Kill For\nCity of Tiny Lights\nThe Mortal Instruments: City of Bones\nSex and the City\nSex and the City 2\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\n#### Ex2 - Print the title of the movies rated between `rateMin` and `rateMax`. Take the 10 best ratings.\n\nGoal:\n    \n* Take the titles of the movies that were rated between `rateMin` and `rateMax` (excluding `rateMin` and including`rateMax`).\n* This list is sorted by rating DESC\n    \nOutput example:\n\n```plain\n...\n3.7 - The Last Face\n3.5 - Wrecker\n...\n```\n    \nSteps:\n\n* Use `filter()` to only keep the movies released between `rateMin` and `rateMax`\n* Sort the filtered movies by decreasing rating\n* Use `map()` to keep only the relevant attributes (i.e. rating and title)\n* Use `foreach()` to pretty print the results",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:48.163",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636796_1382081563",
+   "id": "20240513-092648_847272060",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:194",
+   "dateFinished": "2024-05-26 10:38:48.163",
+   "dateStarted": "2024-05-26 10:38:48.139",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h4>Ex2 - Print the title of the movies rated between <code>rateMin</code> and <code>rateMax</code>. Take the 10 best ratings.</h4>\n<p>Goal:</p>\n<ul>\n<li>Take the titles of the movies that were rated between <code>rateMin</code> and <code>rateMax</code> (excluding <code>rateMin</code> and including<code>rateMax</code>).</li>\n<li>This list is sorted by rating DESC</li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">...\n3.7 - The Last Face\n3.5 - Wrecker\n...\n</code></pre>\n<p>Steps:</p>\n<ul>\n<li>Use <code>filter()</code> to only keep the movies released between <code>rateMin</code> and <code>rateMax</code></li>\n<li>Sort the filtered movies by decreasing rating</li>\n<li>Use <code>map()</code> to keep only the relevant attributes (i.e. rating and title)</li>\n<li>Use <code>foreach()</code> to pretty print the results</li>\n</ul>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\nval rateMin = 3\nval rateMax = 4\n\nrddMovies\n    .filter(m => rateMin < m.rating && m.rating <= rateMax)\n    .sortBy(_.rating, false)\n    .map(m => (m.rating, m.title))\n    .take(10)\n    .foreach{ case (r, t) => println(f\"$r - $t\") }",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:48.271",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636796_1345416127",
+   "id": "20240513-092648_415273231",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:195",
+   "dateFinished": "2024-05-26 10:38:48.271",
+   "dateStarted": "2024-05-26 10:38:48.166",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "4.0 - 2307: Winter's Dream\n3.9 - The Disappointments Room\n3.9 - The Black Room\n3.9 - Birth of the Dragon\n3.7 - The Last Face\n3.7 - Satanic\n3.5 - The Intent\n3.5 - Wrecker\n3.2 - Tall Men\nval \u001b[1m\u001b[34mrateMin\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 3\nval \u001b[1m\u001b[34mrateMax\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 4\n"
+     }
+    ]
+   }
+  },
+  {
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "status": "FINISHED",
+   "text": "%md\n#### Ex3 - Print the 10 top genres\n\nGoals:\n\n* Print the list of the genres that appears the most\n* Use `flatMap()`\n\nOutput example:\n\n```plain\nDrama (513)\nAction (303)\nComedy (279)\nAdventure (259)\n```\n\nTheory:\n\nWhen an operation is giving you a sequence of sequences like:\n\n```scala\nArray(\"hello\", \"world\").map(word => word.split(\"\"))\nres91: Array[Array[String]] = Array(Array(h, e, l, l, o), Array(w, o, r, l, d))\n```\n\nYou may want to flatten this to only have a single list like:\n```scala\nArray(\"hello\", \"world\").map(_.split(\"\")).flatten\nres93: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n```\n\nYou can achieve the same result (i.e. `map` + `flatten`) using `flatMap`:\n```scala\nArray(\"hello\", \"world\").flatMap(_.split(\"\"))\nres95: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n```\n\nWe are going to apply this same technique with the `genres` member.\n\nSteps:\n\n* Use `flatMap()` to get the list with all the genres\n* Make sure to remove trailling whitespaces\n* Count the genres\n* Sort them by decreasing order\n* Show the top 10 genres",
+   "config": {
+    "editorHide": true
+   },
+   "dateStarted": "2024-05-26 10:38:48.280",
+   "dateUpdated": "2024-05-26 10:38:48.300",
+   "dateFinished": "2024-05-26 10:38:48.300",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h4>Ex3 - Print the 10 top genres</h4>\n<p>Goals:</p>\n<ul>\n<li>Print the list of the genres that appears the most</li>\n<li>Use <code>flatMap()</code></li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">Drama (513)\nAction (303)\nComedy (279)\nAdventure (259)\n</code></pre>\n<p>Theory:</p>\n<p>When an operation is giving you a sequence of sequences like:</p>\n<pre><code class=\"language-scala\">Array(&quot;hello&quot;, &quot;world&quot;).map(word =&gt; word.split(&quot;&quot;))\nres91: Array[Array[String]] = Array(Array(h, e, l, l, o), Array(w, o, r, l, d))\n</code></pre>\n<p>You may want to flatten this to only have a single list like:</p>\n<pre><code class=\"language-scala\">Array(&quot;hello&quot;, &quot;world&quot;).map(_.split(&quot;&quot;)).flatten\nres93: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n</code></pre>\n<p>You can achieve the same result (i.e. <code>map</code> + <code>flatten</code>) using <code>flatMap</code>:</p>\n<pre><code class=\"language-scala\">Array(&quot;hello&quot;, &quot;world&quot;).flatMap(_.split(&quot;&quot;))\nres95: Array[String] = Array(h, e, l, l, o, w, o, r, l, d)\n</code></pre>\n<p>We are going to apply this same technique with the <code>genres</code> member.</p>\n<p>Steps:</p>\n<ul>\n<li>Use <code>flatMap()</code> to get the list with all the genres</li>\n<li>Make sure to remove trailling whitespaces</li>\n<li>Count the genres</li>\n<li>Sort them by decreasing order</li>\n<li>Show the top 10 genres</li>\n</ul>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\nrddMovies\n    .flatMap(_.genres)\n    .map(g => (g.trim(), 1))\n    .reduceByKey(_ + _)\n    .sortBy(_._2, false)\n    .take(10)\n    .foreach{ case (g, c) => println(f\"$g ($c)\") }",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:48.436",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636796_757579013",
+   "id": "20240513-092648_877853710",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:197",
+   "dateFinished": "2024-05-26 10:38:48.436",
+   "dateStarted": "2024-05-26 10:38:48.302",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "Drama (513)\nAction (303)\nComedy (279)\nAdventure (259)\nThriller (195)\nCrime (150)\nRomance (141)\nSci-Fi (120)\nHorror (119)\nMystery (106)\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\n#### Ex4 - Print the average number of votes per year, order by descreasing number of votes\n\nGoal:\n\n* Print the average votes per year\n* This output is sorted by descreasing votes\n\nOutput example:\n\n```plain\n...\nyear: 2008 average votes: 275505.3846153846\nyear: 2009 average votes: 255780.64705882352\nyear: 2010 average votes: 252782.31666666668\n...\n```\n\nTheory:\n\nWe are going to use `reduceByKey()` which has the following signature `reduceByKey(func: (V, V) => V): RDD[(K, V)]`. \n\n`reduceByKey()` works on a RDD like `RDD[(K,V)]` (i.e. sort of \"list of key/values pairs\"). \n\n`reduceByKey()` takes a function that, from two elements, returns one i.e. the `func: (V, V) => V` in the signature.\nThe difference with `reduce()` is that `reduceByKey()` uses two elements sharing the same key.\n\nFor example (pseudo code):\n\n```plain\n year, count\n(2010, 2)\n(2011, 3)\n(2011, 4)\n(2010, 8)\n// use reduceByKey((count1, count2) => count1+count2)\n> (2010, 10)\n> (2011, 7)\n```\n\nNote: here `count` is just an Int but it can be anything e.g. `Movie`\n\nSteps:\n\n* To compute the average we need the **total sum** of votes per year and the **count** of all the movies per year\n* Use `map()` to create an RDD made of `(year, (votes, 1))`. Like a word count we use the `1` to be able to count the number of movies per year\n* Use `reduceByKey()` to sum the votes and to count the number of movies per year. The output should look like: `(year, (totalVotes, moviePerYearCount))`\n* Find a way to compute the average using the result from the last operation\n* Sort by number of votes decreasing",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:38:48.473",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636796_44944771",
+   "id": "20240513-092648_1078439886",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:198",
+   "dateFinished": "2024-05-26 10:38:48.473",
+   "dateStarted": "2024-05-26 10:38:48.441",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h4>Ex4 - Print the average number of votes per year, order by descreasing number of votes</h4>\n<p>Goal:</p>\n<ul>\n<li>Print the average votes per year</li>\n<li>This output is sorted by descreasing votes</li>\n</ul>\n<p>Output example:</p>\n<pre><code class=\"language-plain\">...\nyear: 2008 average votes: 275505.3846153846\nyear: 2009 average votes: 255780.64705882352\nyear: 2010 average votes: 252782.31666666668\n...\n</code></pre>\n<p>Theory:</p>\n<p>We are going to use <code>reduceByKey()</code> which has the following signature <code>reduceByKey(func: (V, V) =&gt; V): RDD[(K, V)]</code>.</p>\n<p><code>reduceByKey()</code> works on a RDD like <code>RDD[(K,V)]</code> (i.e. sort of &ldquo;list of key/values pairs&rdquo;).</p>\n<p><code>reduceByKey()</code> takes a function that, from two elements, returns one i.e. the <code>func: (V, V) =&gt; V</code> in the signature.<br />\nThe difference with <code>reduce()</code> is that <code>reduceByKey()</code> uses two elements sharing the same key.</p>\n<p>For example (pseudo code):</p>\n<pre><code class=\"language-plain\"> year, count\n(2010, 2)\n(2011, 3)\n(2011, 4)\n(2010, 8)\n// use reduceByKey((count1, count2) =&gt; count1+count2)\n&gt; (2010, 10)\n&gt; (2011, 7)\n</code></pre>\n<p>Note: here <code>count</code> is just an Int but it can be anything e.g. <code>Movie</code></p>\n<p>Steps:</p>\n<ul>\n<li>To compute the average we need the <strong>total sum</strong> of votes per year and the <strong>count</strong> of all the movies per year</li>\n<li>Use <code>map()</code> to create an RDD made of <code>(year, (votes, 1))</code>. Like a word count we use the <code>1</code> to be able to count the number of movies per year</li>\n<li>Use <code>reduceByKey()</code> to sum the votes and to count the number of movies per year. The output should look like: <code>(year, (totalVotes, moviePerYearCount))</code></li>\n<li>Find a way to compute the average using the result from the last operation</li>\n<li>Sort by number of votes decreasing</li>\n</ul>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\nrddMovies\n    .map(m => (m.year, (m.votes, 1)))\n    .reduceByKey((v1, v2) => (v1._1 + v2._1, v1._2 + v2._2))\n    .mapValues{ case (v, n) => v / n toFloat }\n    .sortBy(_._2, false)\n    .collect()\n    .foreach{ case (y, a) => println(f\"year: $y average votes: $a\") }",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 10:39:20.759",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636797_868442753",
+   "id": "20240513-092648_1308721736",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:199",
+   "dateFinished": "2024-05-26 10:39:20.759",
+   "dateStarted": "2024-05-26 10:39:20.608",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "year: 2012 average votes: 285226.0\nyear: 2008 average votes: 275505.0\nyear: 2006 average votes: 269289.0\nyear: 2009 average votes: 255780.0\nyear: 2010 average votes: 252782.0\nyear: 2007 average votes: 244331.0\nyear: 2011 average votes: 240790.0\nyear: 2013 average votes: 219049.0\nyear: 2014 average votes: 203930.0\nyear: 2015 average votes: 115726.0\nyear: 2016 average votes: 48591.0\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\n### Part 2 - Create a basic Inverted Index\n\nThe goal of this part is to show you how to create an inverted index that indexes words from all the movies' description.",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 09:48:03.047",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636797_1538044009",
+   "id": "20240513-092648_362503434",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:200",
+   "dateFinished": "2024-05-26 09:48:03.047",
+   "dateStarted": "2024-05-26 09:48:02.980",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h3>Part 2 - Create a basic Inverted Index</h3>\n<p>The goal of this part is to show you how to create an inverted index that indexes words from all the movies&rsquo; description.</p>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\nGoal:\n\nUsing `rddMovies` create an inverted that use the movies' description:\n\n```plain\nMovie(1,Guardians of the Galaxy,List(Action, Adventure, Sci-Fi),A group of intergalactic [...] of the universe.,James Gunn,List(Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana),2014,8.1,757074.0)\nMovie(2,Prometheus,List(Adventure, Mystery, Sci-Fi),Following clues to the origin[...] not alone.,Ridley Scott,List(Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron),2012,7.0,485820.0)\nMovie(3,Split,List(Horror, Thriller),Three girls are kidnapped [...] a frightful new 24th.,M. Night Shyamalan,List(James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula),2016,7.3,157606.0)\n...\n```\n\nand extract them to produce an inverted index like:\n\n```plain\n\"reunion\" -> (640, 697)\n\"runner\" -> (338)\n\"vietnam\" -> (797, 947, 983)\n...\n```\n\nSteps\n\n* Tokenize description i.e. produce an RDD like (movId, words)\n* Normalize words e.g. toLowercase, trimming,..\n* Remove stopwords (ignored here)\n* Apply stemming (ignored here)\n* Group by document id",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 09:48:03.149",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": true,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636797_1720307860",
+   "id": "20240513-092648_1212054958",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:201",
+   "dateFinished": "2024-05-26 09:48:03.149",
+   "dateStarted": "2024-05-26 09:48:03.050",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<p>Goal:</p>\n<p>Using <code>rddMovies</code> create an inverted that use the movies&rsquo; description:</p>\n<pre><code class=\"language-plain\">Movie(1,Guardians of the Galaxy,List(Action, Adventure, Sci-Fi),A group of intergalactic [...] of the universe.,James Gunn,List(Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana),2014,8.1,757074.0)\nMovie(2,Prometheus,List(Adventure, Mystery, Sci-Fi),Following clues to the origin[...] not alone.,Ridley Scott,List(Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron),2012,7.0,485820.0)\nMovie(3,Split,List(Horror, Thriller),Three girls are kidnapped [...] a frightful new 24th.,M. Night Shyamalan,List(James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula),2016,7.3,157606.0)\n...\n</code></pre>\n<p>and extract them to produce an inverted index like:</p>\n<pre><code class=\"language-plain\">&quot;reunion&quot; -&gt; (640, 697)\n&quot;runner&quot; -&gt; (338)\n&quot;vietnam&quot; -&gt; (797, 947, 983)\n...\n</code></pre>\n<p>Steps</p>\n<ul>\n<li>Tokenize description i.e. produce an RDD like (movId, words)</li>\n<li>Normalize words e.g. toLowercase, trimming,..</li>\n<li>Remove stopwords (ignored here)</li>\n<li>Apply stemming (ignored here)</li>\n<li>Group by document id</li>\n</ul>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\n/**\n* Goal: create an inverted index that allows searching a word\n* in the movies description.\n* Features:\n* - case insensitive\n*\n*/\n// In this first function we are going to tokenize and order the descriptions of the movies, then return these data. We are not going to apply any search right now.\ndef createInvertedIndex(movies: RDD[Movie]): RDD[(String, Iterable[Int])] = {\n    // Define helper functions directly inside this function. In scala you can declare inner functions\n    // and use them only inside the function they were declared. Useful to encapsulate/restrict \n    // their use outside this function.\n    \n    // Split the given string into an array of words (without any formatting), then return it.\n    def tokenizeDescription(description: String): Seq[String] = {\n        description.split(\"[\\\\s,.]+\")\n    }\n    \n    // Remove the blank spaces (trim) in the given word, transform it in lowercase, then return it.\n    def normalizeWord(word: String): String = {\n        word.trim().toLowerCase()\n    }\n    \n    // For the sake of simplicity let's ignore the implementation (in a real case we would return true if w is a stopword, otherwise false).\n    // TODO student nothing here but still call this function in your invertedIndex creation process.\n    def isStopWord(w: String): Boolean = {\n        false\n    }\n    \n    // For the sake of simplicity let's ignore the implementation (in a real case we would apply stemming to w and return the result, e.g. w=automation -> w=automat).\n    // TODO student nothing here but still call this function in your invertedIndex creation process.\n    def applyStemming(w: String): String = {\n        w\n    }\n    \n    // TODO student\n    // Here we are going to work on the movies RDD, by tokenizing and normalizing the description of every movie, then by building a key-value object that contains the tokens as keys, and the IDs of the movies as values\n    // (see the example on 4).\n    // The goal here is to do everything by chaining the possible transformations and actions of Spark.\n    // Possible steps:\n    //   1) What we first want to do here is applying the 4 previous methods on any movie's description. Be aware of the fact that we also want to keep the IDs of the movies.\n    //   2) For each tokenized word, create a tuple as (word, id), where id is the current movie id\n    //        [\n    //          (\"toto\", 120), (\"mange\", 120), (\"des\", 120), (\"pommes\", 120),\n    //          (\"toto\", 121), (\"lance\", 121), (\"des\", 121), (\"photocopies\", 121)\n    //        ]\n    //      Hint: you can use a `map` function inside another `map` function.\n    //   3) We finally need to find a way to remove duplicated keys and thus only having one entry per key, with all the linked IDs as values. For example:\n    //        [\n    //          (\"toto\", [120, 121]),\n    //          (\"mange\", [120]),\n    //          ...\n    //        ]\n    val invertedIndex = movies\n        .flatMap { m =>\n            tokenizeDescription(m.description)\n                .map(normalizeWord)\n                .filterNot(isStopWord)\n                .map(word => (applyStemming(word), m.id))\n        }\n        .distinct()\n        .groupByKey()\n\n    // Return the new-built inverted index.\n    invertedIndex\n}",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 11:35:06.696",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636797_1891513581",
+   "id": "20240513-092648_1408148244",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:202",
+   "dateFinished": "2024-05-26 11:35:06.696",
+   "dateStarted": "2024-05-26 11:35:06.551",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[33mwarning: \u001b[0m1 deprecation (since 2.13.0); for details, enable `:setting -deprecation` or `:replay -deprecation`\ndef createInvertedIndex(movies: org.apache.spark.rdd.RDD[Movie]): \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Iterable[Int])]\u001b[0m\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%md\nNow we would like to use our inverted index to display the top N most used words in the descriptions of movies.",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 11:35:07.207",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "editorMode": "ace/mode/markdown",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636797_590422242",
+   "id": "20240513-092648_1571732340",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:203",
+   "dateFinished": "2024-05-26 11:35:07.207",
+   "dateStarted": "2024-05-26 11:35:07.188",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<p>Now we would like to use our inverted index to display the top N most used words in the descriptions of movies.</p>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\n// Here we are going to operate the analytic and display its result on a given inverted index (that will be obtained from the previous function).\ndef topN(invertedIndex: RDD[(String, Iterable[Int])], N: Int): Unit = {\n  // We are going to work on the given invertedIndex array to do our analytic:\n  //   1) Find a way to get the number of movie in which a word appears.\n  //   2) Keep only the top N words and their occurence.\n  val topWords: Array[(String, Int)] = invertedIndex\n    .map(m => (m._1, m._2.size))\n    .sortBy(_._2, false)\n    .take(N)\n  \n  // Print the words and the number of descriptions in which they appear.\n  println(\"Top '\" + N + \"' most used words\")\n  topWords.foreach(println)\n}",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 11:35:07.560",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636797_527525931",
+   "id": "20240513-092648_800469110",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:204",
+   "dateFinished": "2024-05-26 11:35:07.559",
+   "dateStarted": "2024-05-26 11:35:07.462",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "def topN(invertedIndex: org.apache.spark.rdd.RDD[(String, Iterable[Int])], N: Int): \u001b[1m\u001b[32mUnit\u001b[0m\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "%spark\n// Code used to test your implementation.\n// Create the inverted index of the movies.\nval invertedIndex = createInvertedIndex(rddMovies)\n\n// Show how the inverted index looks like.\ninvertedIndex.take(3).foreach(x => println(x._1 + \": \" + x._2.mkString(\", \")))\n\n// Show the top 10 most used words.\ntopN(invertedIndex, 10)",
+   "user": "anonymous",
+   "dateUpdated": "2024-05-26 11:35:08.329",
+   "progress": 0,
+   "config": {
+    "lineNumbers": true,
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "editorMode": "ace/mode/scala",
+    "colWidth": 12,
+    "editorHide": false,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1716298636797_1479214559",
+   "id": "20240513-092648_1232697535",
+   "dateCreated": "2024-05-21T13:37:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:205",
+   "dateFinished": "2024-05-26 11:35:08.328",
+   "dateStarted": "2024-05-26 11:35:08.068",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "divorcee: 63\nreunion: 640, 697\nconfidants: 785\nTop '10' most used words\n(a,837)\n(the,720)\n(to,628)\n(of,559)\n(and,553)\n(in,459)\n(his,327)\n(an,259)\n(is,256)\n(with,243)\nval \u001b[1m\u001b[34minvertedIndex\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Iterable[Int])]\u001b[0m = ShuffledRDD[321] at groupByKey at <console>:62\n"
+     }
+    ]
+   }
+  }
+ ],
+ "name": "MAC-Lab-SparkRDDs",
+ "id": "2K1C1GSSE",
+ "defaultInterpreterGroup": "spark",
+ "version": "0.11.0",
+ "noteParams": {},
+ "noteForms": {},
+ "angularObjects": {},
+ "config": {
+  "personalizedMode": "false",
+  "looknfeel": "default",
+  "isZeppelinNotebookCronEnable": false
+ },
+ "info": {
+  "isRunning": false
+ },
+ "path": "/MAC-Lab-SparkRDDs"
 }

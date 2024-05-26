@@ -14,4 +14,3 @@ services:
       - "./logs:/logs"
       - "./notebooks:/notebooks"
       - "./data:/data"
-
